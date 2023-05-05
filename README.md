@@ -4,7 +4,7 @@ A simple Chip-8 emulator created in C++
 ![Pong](screenshots/PONG.png "Pong")
 *Pong*
 
-![Tetris](screenshots/Tetris.png "Tetris")
+![Tetris](screenshots/TETRIS.png "Tetris")
 *Tetris*
 
 ## Building
