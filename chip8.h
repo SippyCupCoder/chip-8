@@ -10,7 +10,7 @@ public:
 private:
     uint16_t PC; // Program Counter
     uint16_t I; // Index Register
-    uint8_t SP; // Stack Pointer
+    uint16_t SP; // Stack Pointer
 
     uint16_t stack[16];
     uint8_t V[16]; // Registers

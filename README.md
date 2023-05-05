@@ -1,10 +1,18 @@
 # CHIP8
+A simple Chip-8 emulator created in C++
 
+![Pong](screenshots/PONG.png "Pong")
+*Pong*
 
+![Tetris](screenshots/Tetris.png "Tetris")
+*Tetris*
 
+## Building
+```
+$ make
+```
 
-## How to build
-CD into the work directory and run make
-
-## How to run
-Run the following command after building: ./CHIP8.exe PATH/TO/FILE
+## Running
+```
+$ CHIP8.exe PATH/TO/FILE
+```
