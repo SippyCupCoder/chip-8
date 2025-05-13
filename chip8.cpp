@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h> 
 
-#include "chip8.h"
+#include "chip8.hpp"
 
 #define X (opcode & 0x0F00) >> 8
 #define Y (opcode & 0x00F0) >> 4

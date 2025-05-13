@@ -1,8 +1,8 @@
 #include <iostream>
-#include<cmath>
+#include <cmath>
 #include <SDL2/SDL.h>
 
-#include "chip8.h"
+#include "chip8.hpp"
 
 #define WIDTH 640
 #define HEIGHT 320
@@ -110,8 +110,8 @@ int main(int argc, char *argv[]) {
         
         // Attempt to cap at 60 FPS
         const Uint64 end = SDL_GetPerformanceCounter();
-        const float elapsedMS = (end - start) / (float)SDL_GetPerformanceFrequency() * (float)1000;
-        SDL_Delay(std::max(floor(16.666f - elapsedMS), (double)0));
+        const double elapsedMS = (end - start) / SDL_GetPerformanceFrequency() * 1000;
+        SDL_Delay(std::max(floor(16.666f - elapsedMS), 0.0));
     }
 
     SDL_DestroyWindow(window);
